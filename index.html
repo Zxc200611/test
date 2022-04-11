@@ -1,8 +1,9 @@
 <div id="main"></div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-onload=async function(){
-	let x=await $.get("https://zxc200611.github.io/test/test1.md");
-	console.log(x.responseText);
+onload=function(){
+	$.get("https://zxc200611.github.io/test/test1.md",function(data,status){
+		console.log(data);
+	});
 }
 </script>
