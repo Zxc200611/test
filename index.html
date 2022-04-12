@@ -9,6 +9,7 @@
 //$.url().param('data');
 function readFile(fileName,returnFunction){
 	$.get("./"+fileName,function(data,status){
+		console.log("Raw md:",data);
 		returnFunction(data);
 	});
 }
